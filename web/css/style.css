@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    width: 30%;
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 7px 7px gray;
+    margin: 40px 20px;
+    background-size: cover;
+}
+.box img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+.box h3{
+    margin-left: 15px;
+}
+.box p{
+    font-size: 16px;
+    line-height: 20px;
+    height: 40%;
+    padding: 0 15px 15px 15px;
+    overflow: hidden;
+}
+#btn{
+    background-color: black;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 15px;
+    border-radius: 5px;
+    float: right;
+}
+#btn:hover{
+    background-color: #99A3A4 ;
+    color: #fff;
+
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    transition: opacity 0.75s visibility 0.75s;
+}
+
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #ddd;
+    border-top-color: #99A3A4  ;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from{ transform: rotate(0turn); }
+    to{transform: rotate(1turn);}
+
+}
+.footer {
+    padding: 40px 0;
+    background-color: black;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-color: black;
+}
+nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px ;
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: #99A3A4 ;
+    transition: all 0.4s ease 0s;
+}
