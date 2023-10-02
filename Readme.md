@@ -59,5 +59,5 @@ This project is licensed under the [Choose an open-source license, e.g., MIT Lic
 
 ## Contact
 
-For inquiries or support, please reach out to [Provide contact information or a link to the project's contact page.]
+For inquiries or support, please reach out to to [Provide contact information or a link to the project's contact page.]
 
